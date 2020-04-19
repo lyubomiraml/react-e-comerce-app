@@ -13,7 +13,7 @@ class Directory extends Component {
           title: 'hats',
           imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          linkUrl: 'hats',
+          linkUrl: 'shop/hats',
         },
         {
           title: 'jackets',
@@ -47,7 +47,7 @@ class Directory extends Component {
 
   render(){
     return (
-      <div className="directory-menu">
+      <div className="shop">
         {this.state.sections.map(({ id, ...otherSectionProps}) => (<MenuItem key={id} {...otherSectionProps} />))}
       </div>
     )
