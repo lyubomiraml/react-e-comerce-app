@@ -7,7 +7,7 @@ const CollectionPreview = ({ title, routeName, items, history, match }) => (
   <div className="collection-preview">
     <h1
       className="title"
-      onClick={() => history.push(`${match.url}${routeName}`)}
+      onClick={() => history.push(`${match.url}/${routeName}`)}
     >
       {title.toUpperCase()}
     </h1>
