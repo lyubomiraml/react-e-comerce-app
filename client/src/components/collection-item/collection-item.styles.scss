@@ -7,7 +7,7 @@
   position: relative;
 
   .image {
-    width: 100%; 
+    width: 100%;
     height: 95%;
     background-size: cover;
     background-position: center;
@@ -20,6 +20,13 @@
     position: absolute;
     top: 255px;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   &:hover {
@@ -33,6 +40,20 @@
     }
   }
 
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      .custom-button {
+        opacity: unset;
+      }
+    }
+  }
+
   .collection-footer {
     width: 100%;
     height: 5%;
@@ -41,12 +62,16 @@
     font-size: 18px;
 
     .name {
-      width: 90%;
+      // width: 85%;
       margin-bottom: 15px;
     }
 
     .price {
-      width: 10%;
+      // width: 15%;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
     }
   }
 }
