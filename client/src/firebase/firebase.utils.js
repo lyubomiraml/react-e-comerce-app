@@ -3,14 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyAd6ZZF54Vr71TikaEJVmztmcUISKXjoQQ",
+  apiKey: "taina maina",
   authDomain: "react-e-comerce-app.firebaseapp.com",
   databaseURL: "https://react-e-comerce-app.firebaseio.com",
   projectId: "react-e-comerce-app",
   storageBucket: "react-e-comerce-app.appspot.com",
-  messagingSenderId: "106660890914",
-  appId: "1:106660890914:web:a2e24e917cd682b0e57d7b",
-  measurementId: "G-366NBRSPJP",
+  messagingSenderId: "taina maina",
+  appId: "taina maina",
+  measurementId: "taina maina",
 };
 
 export const createUserProfileDocument = async (userAuth, additinalData) => {
